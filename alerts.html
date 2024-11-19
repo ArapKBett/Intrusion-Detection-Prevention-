@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alerts</title>
+</head>
+<body>
+    <h1>Alerts</h1>
+    <ul>
+        {% for alert in alerts %}
+            <li>{{ alert }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/block_ip" method="post">
+        <input type="text" name="ip" placeholder="IP to block">
+        <button type="submit">Block IP</button>
+    </form>
+</body>
+</html>
